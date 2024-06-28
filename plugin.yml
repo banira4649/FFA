@@ -1,6 +1,6 @@
 ---
 name: FFA
-version: 0.0.1
+version: 0.0.2
 main: banira4649\FFA\Main
 api: 5.0.0
 src-namespace-prefix: banira4649\FFA
