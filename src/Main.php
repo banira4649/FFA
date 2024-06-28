@@ -123,6 +123,6 @@ class Main extends PluginBase{
 
     public static function getPearlRemaining(Player $player): float|false{
         $used = self::getPearlUsedTime($player);
-        return $used ? microtime(true) - $used : false;
+        return $used ? ($result = 15 - (microtime(true) - $used)) >= 0 ? $result : 0 : false;
     }
 }
